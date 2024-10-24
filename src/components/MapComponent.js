@@ -30,7 +30,7 @@ const MapComponent = () => {
   const fetchCoordinates = async (location) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/geocode?location=${location}`
+        `https://nominatim.openstreetmap.org/search?format=json&q=${location}`
       );
       const data = await response.json();
       if (data.length > 0) {

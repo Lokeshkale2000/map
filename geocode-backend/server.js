@@ -6,8 +6,8 @@ const PORT = 5000;
 
 app.use(cors());
 
-// Proxy request to Nominatim API
 app.get('/api/geocode', async (req, res) => {
+  
   const location = req.query.location;
   try {
     const response = await axios.get(

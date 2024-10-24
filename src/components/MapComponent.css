@@ -1,0 +1,56 @@
+/* Mygeolocation.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  .map-container {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: 900px; /* Full viewport height */
+    padding: 20px auto;
+    margin: 40px auto;
+  }
+  
+  .search-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .swap-button,
+  .search-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .swap-button:hover,
+  .search-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .leaflet-container {
+    flex-grow: 1; /* Allows the map to take remaining space */
+  }
+  
